@@ -8,10 +8,10 @@ Player::Player(sf::Uint16 gameId)
 	_hp = Constants::PLAYER_HP;
 }
 
-void Player::destroy()
+/*void Player::destroy()
 {
 	Game::_gameObjectManager.removePlayer(_id);
-}
+}*/
 
 GameObject::CollisionType Player::collisionResponse() const
 {

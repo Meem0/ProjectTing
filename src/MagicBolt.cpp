@@ -72,7 +72,7 @@ bool MagicBolt::collisionCheck()
 		 itr != Game::_gameObjectManager.end(); itr++)
 	{
 		if (itr->second != this &&
-			itr->second->collisionResponse() == COL_ENEMY &&
+			itr->second->collisionResponse() != COL_PLAYER_PROJECTILE &&
 			itr->second->getId() != _creator &&
 			getBoundingBox().intersects(itr->second->getBoundingBox()))
 		{
